@@ -1,0 +1,28 @@
+@import "../color.less";
+
+@prefix: dy-transfer;
+
+.@{prefix} {
+  min-width: 400px;
+  height: 300px;
+  overflow: hidden;
+  & > div {
+    height: 100%;
+  }
+  &-leftWrapper,
+  &-rightWrapper {
+    flex: 1;
+    overflow: hidden;
+    width: 200px;
+    border: 1px solid @dy-font-blue-color;
+    border-radius: 2px;
+  }
+  &-operate {
+    margin: 5px;
+    flex: 0 0 50px;
+    width: 50px;
+    button {
+      margin: 40px 0;
+    }
+  }
+}

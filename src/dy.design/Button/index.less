@@ -1,0 +1,77 @@
+@import "../color.less";
+
+.dy-button {
+  cursor: pointer;
+  position: initial;
+  display: block;
+  outline: none;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  color: #004669;
+  border: 1px solid #c4c6cf;
+  background: #dfe6ed;
+
+  &:hover {
+    background: #95aaba;
+    color: #fff;
+  }
+}
+
+.dy-button-normal {
+  background: #fff;
+  border: 1px solid #c4c6cf;
+  color: #000;
+
+  &:hover {
+    background: #004669;
+  }
+}
+
+.dy-button-warning {
+  border: 1px solid @dy-warning-color;
+  color: #fff;
+  background: @dy-warning-color;
+
+  &:hover {
+    border: 1px solid #d75e15;
+    background: #d75e15;
+    color: #fff;
+  }
+}
+
+.dy-button-disabled {
+  color: #e0e0e0;
+  background: #f7f8fa;
+
+  &:hover {
+    color: #e0e0e0;
+    background: #f7f8fa;
+    cursor: not-allowed;
+  }
+}
+
+.dy-button-strong {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+
+  &:hover {
+    background: @dy-warning-color;
+    border: none;
+  }
+}
+
+.dy-button-ghost {
+  background: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: @dy-warning-color;
+    border: none;
+  }
+}

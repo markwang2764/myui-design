@@ -1,0 +1,25 @@
+@import "../globalstyle.less";
+.form-item {
+  margin-bottom: 20px;
+  position: relative;
+  label {
+    display: block;
+    flex: 1;
+    font-size: 14px;
+    color: rgb(0, 70, 105);
+  }
+  .icon-state,
+  .suffix-wrapper {
+    position: absolute;
+    right: 5px;
+  }
+  .icon-error-state {
+    color: @dy-error-color;
+  }
+  input {
+    color: #fff;
+  }
+  textarea {
+    max-height: 120px;
+  }
+}

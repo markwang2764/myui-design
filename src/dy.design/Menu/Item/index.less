@@ -1,0 +1,27 @@
+@import '../../color.less';
+
+.dyd-menu-item {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	cursor: pointer;
+	color: @dy-deep-color;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	&:hover {
+		background: @dy-navigation-bgcolor;
+		color: #fff;
+	}
+}
+
+.dyd-menu-item.disabled {
+	color: @dy-disabled-color;
+	cursor: not-allowed;
+}
+
+.dyd-menu-item__activated {
+	color: #fff;
+	background: @dy-navigation-bgcolor;
+}

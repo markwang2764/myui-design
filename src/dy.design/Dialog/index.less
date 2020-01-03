@@ -1,0 +1,61 @@
+@import "../color.less";
+.dy-dialog {
+  .dy-dialog-backdrop {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .dy-dialog-content-header {
+    padding: 6px 10px;
+    border-bottom: 0 solid transparent;
+    font-size: 14px;
+    background: transparent;
+    color: @dy-font-yellow-color;
+    border-bottom: 1px solid #dcdee3;
+    .close {
+      font-size: 13px;
+      color: #fff;
+      font-weight: 100;
+      cursor: pointer;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  .dy-dialog-content-footer {
+    padding: 6px 10px;
+    border-top: 0 solid transparent;
+    background: transparent;
+    text-align: right;
+    flex-direction: row-reverse;
+    border-top: 1px solid #dcdee3;
+    button {
+      margin-left: 10px;
+    }
+  }
+  .dy-dialog-content-middle {
+    min-height: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .dy-dialog-content {
+    min-width: 200px;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1001;
+    top: 30%;
+    left: 50%;
+    background: @dy-dialog-bgcolor;
+    border: 1px solid #dcdee3;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    text-align: left;
+  }
+}

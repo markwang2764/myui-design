@@ -1,0 +1,83 @@
+@import "../style/color.less";
+
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  .sider {
+    box-sizing: border-box;
+    min-height: 100%;
+
+    background: @dy-sider-bg-color;
+    overflow: hidden;
+    width: 150px;
+    flex: 0 0 150px;
+
+    transition: width 0.5s 0.5s;
+    transition: flex 0.5s 0.5s;
+  }
+
+  .content {
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 30px;
+    flex: 1;
+  }
+}
+
+.header {
+  height: 20px;
+  flex: 0 0 20px;
+  background: @dy-header-bg-color;
+  line-height: 20px;
+  font-family: SiemensRoman;
+  font-size: 11px;
+  padding: 0 10px;
+  color: #879baa;
+  font-weight: bold;
+  margin-bottom: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.footer {
+  z-index: 9;
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  height: 30px;
+  background: @dy-footer-bg-color;
+  text-align: center;
+  line-height: 30px;
+  font-family: SiemensRoman;
+  color: #3c464b;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.codePlace {
+  position: relative;
+}
+pre {
+  background: white;
+  font-size: 13px !important;
+  line-height: 20px;
+  font-family: "Lucida Console", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+  border: 1px solid #ddcc;
+}
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.desc {
+  margin: 30px;
+  font-size: 14px;
+}

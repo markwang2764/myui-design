@@ -1,0 +1,40 @@
+@import "../color.less";
+@keyframes move {
+  0% {
+    top: -20px;
+  }
+  10% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+  }
+  90% {
+    top: 0;
+  }
+  100% {
+    top: -20px;
+  }
+}
+.dy-message {
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  position: fixed;
+  top: -20px;
+  left: 0;
+  opacity: 0.8;
+  text-align: center;
+}
+.dy-message__success {
+  background: @dy-font-blue-color;
+  color: #fff;
+}
+.dy-message__warning {
+  background: @dy-warning-color;
+  color: #fff;
+}
+.dy-message__error {
+  background: @dy-error-color;
+  color: #fff;
+}

@@ -1,0 +1,100 @@
+@import "./default.less";
+@import "./color.less";
+input,
+textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  height: 30px;
+  border-radius: 2px;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  &:focus {
+    border: 1px solid @dy-warning-color;
+    outline: none;
+  }
+}
+.focusInput {
+  border: 1px solid @dy-warning-color;
+  outline: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+}
+.form-label {
+  font-size: 14px;
+}
+
+/* 
+  flex-direction column 横排
+  flex-direction row 竖排 
+  justify-content space-between  两端对齐
+  align-items center 垂直居中
+*/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.flex-x {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-y {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex-space-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-space-around {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+}
+
+.flex-grow {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}

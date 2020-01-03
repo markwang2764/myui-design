@@ -1,0 +1,33 @@
+@import "../color.less";
+
+@prefix: dy-tree;
+
+.@{prefix} {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &-checked {
+    color: @dy-deep-color;
+  }
+  &-node {
+    font-size: 14px;
+    margin: 10px;
+    cursor: pointer;
+    &-child {
+      transition: display 0.3s;
+    }
+    .checkIcon {
+      margin-right: 5px;
+      font-size: 15px;
+      width: 15px;
+      transition: transform 0.3s;
+    }
+    &-checked {
+      color: @dy-deep-color;
+    }
+
+    &-title:hover {
+      color: @dy-deep-color;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "../globalstyle.less";
+
+.dy-select {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  label {
+    display: block;
+    flex: 1;
+    font-size: 14px;
+  }
+  input {
+    z-index: 1;
+  }
+  .input-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    input {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .dy-select-arrow {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background: @dy-arrow-bg-color;
+    border-radius: 0 2px 2px 0;
+    border-right: 1px solid @dy-arrow-bg-color;
+    z-index: 0;
+    // transition: transform .3s;
+  }
+
+  .dy-select-arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    height: 0;
+    width: 0;
+    border: 8px solid;
+    margin-top: -4px;
+    border-color: @dy-arrow-color transparent transparent transparent;
+  }
+
+  .dy-select-arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    margin-top: -5px;
+    border-color: @dy-arrow-bg-color transparent transparent transparent;
+  }
+
+  .dy-select-select {
+    width: 100%;
+    position: absolute;
+    top: 32px;
+    overflow: auto;
+    right: 0;
+    z-index: 9;
+    background: @dy-select-bg-color;
+    border-radius: 0 0 2px 2px;
+    outline: none;
+    min-height: 30px;
+    max-height: 400px;
+    .dy-select-options {
+      padding: 0 15px;
+      cursor: pointer;
+      height: 30px;
+      color: @dy-select-font-color;
+      border-bottom: 1px solid @dy-arrow-color;
+      &:nth-last-of-type(1) {
+        border: none;
+      }
+      &:hover {
+        background: @dy-base-hover-bgcolor;
+        color: @dy-base-hover-ftcolor;
+      }
+    }
+  }
+
+  .dy-select-label {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 5px;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+  }
+
+  .arrow-right {
+    position: relative;
+  }
+
+  .arrow-right:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    margin-top: -6.25px;
+    border-color: transparent transparent transparent @dy-arrow-color;
+  }
+
+  .arrow-right:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    margin-top: -6.25px;
+    border-color: transparent transparent transparent @dy-select-bg-color;
+  }
+}

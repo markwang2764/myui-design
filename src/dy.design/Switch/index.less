@@ -1,0 +1,70 @@
+.switch-wrapper {
+  cursor: pointer;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  max-width: 70px;
+  .righttext,
+  .lefttext {
+    padding: 0 5px;
+  }
+
+  & > span {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .switch-button {
+    text-align: center;
+    color: #004669;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 5px;
+  }
+}
+.switch-wrapper.tiny {
+  cursor: pointer;
+  height: 25px;
+  border-radius: 3px;
+  line-height: 25px;
+  min-width: 50px;
+
+  & > span {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .switch-button {
+    text-align: center;
+    color: #004669;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 5px;
+  }
+}
+.switch-wrapper.switch-ison {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.3) 100%);
+
+  color: #004669;
+  .switch-button {
+    transform: rotate(0deg);
+  }
+}
+.switch-wrapper.switch-ison.disabled {
+  background: #e6eaea;
+  cursor: not-allowed;
+}
+.switch-wrapper.switch-isoff {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.3) 100%);
+  color: #fff;
+  .switch-button {
+    transform: rotate(180deg);
+    color: #fff;
+  }
+}
+.switch-wrapper.switch-isoff.disabled {
+  background: gray;
+  cursor: not-allowed;
+}
