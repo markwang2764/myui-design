@@ -1,7 +1,2 @@
 # dy-project
-
-start project
-
-npm install
-
-npm run dev
+ 第元信息科技 ui库 路由库

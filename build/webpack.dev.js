@@ -11,7 +11,8 @@ module.exports = smart(baseConfig, {
     mode: "development",
     devtool: 'cheap-module-eval-source-map',
     entry: {
-        main: ['webpack-hot-middleware/client?reload=true', resolve("../src/index.js")]
+        // main: ['webpack-hot-middleware/client?reload=true', resolve("../src/index.js")]
+        main: resolve("../src/index.js")
     },
     output: {
         publicPath: '/'
@@ -41,7 +42,7 @@ module.exports = smart(baseConfig, {
      ]   
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        // new webpack.HotModuleReplacementPlugin(),
         new FriendlyErrorsPlugin({
             compilationSuccessInfo: {
                 messages: [`Your application is running here: ${dev.host}:${dev.port}`],

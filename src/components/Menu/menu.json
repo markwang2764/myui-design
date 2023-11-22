@@ -50,9 +50,5 @@
   {
     "title": "Table",
     "path": "/table"
-  },
-  {
-    "title": "Search",
-    "path": "/search"
   }
 ]

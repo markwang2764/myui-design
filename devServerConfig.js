@@ -10,8 +10,8 @@ if (fs.existsSync(ipFilePath) && fs.statSync(ipFilePath).isFile()) {
     `module.exports = 'http://localhost:3000'`,
     "utf8"
   );
-  throw new Error("确认 `devServerIP.js` 文件里 IP 地址正确");
 }
+console.log(ip);
 
 module.exports = {
   devServer: {

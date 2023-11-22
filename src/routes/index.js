@@ -196,17 +196,6 @@ export default class Routes extends React.Component {
                   "./Select"
                 )}
               />
-
-              <LoaderRoute
-                path="/search"
-                key="/search"
-                exact
-                cache={cacheList["/search"] || false}
-                component={import(
-                  /*webpackChunkName: 'search'*/
-                  "./Search"
-                )}
-              />
             </Switch>
           </Layout>
         </Switch>
